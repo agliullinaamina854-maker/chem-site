@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Информационная страница с переходами по главам</title>
+<style>
+a:hover {
+  background-color: yellow;
+}
+a.active {
+  background-color: red;
+}
+</style>
+</head>
+<body>
+<a id="top"></a>
+<h1> Меню </h1>
+<ul>
+  <li> <a href="index.html"> Главная страница </a> </li>
+  <li> <a href="info.html" class="active"> Информационная страница с главами </a> </li>
+  <li> <a href="photos.html"> Фото </a> </li>
+  <li> <a href="table.html"> Таблица </a> </li>
+  <li> <a href="forms.html"> Форма </a> </li>
+  <li> <a href="passport.html"> Считывание из DOM </a> </li>
+  <li> <a href="passport_edit.html"> Кириллица на латиницу по клику </a> </li>
+  <li> <a href="algo.html"> Решение задачи </a> </li>
+  <li> <a href="info.html#lists"> Списки (закладка на информационной странице) </a> </li>
+  <li> <a href="https://www.hse.ru/" target="_blank"> Внешний сайт (ВШЭ) </a> </li>
+  <li> <a href="https://www.hse.ru/" target="_blank"> <img src="img/ext.png" width="20" alt="Внешний сайт"> </a> </li>
+  <li> <a href="index.html"> <img src="img/logo.png" width="20" alt="На главную"> </a> </li>
+</ul>
+
+
+<a href="#recipe">Раствор</a> <a href="#lists">Классы веществ</a> <a href="#periods">Периоды</a> <a href="#top">К началу</a> <a href="#top"><img src="img/up.png" width="20" alt="Вверх"></a> <a href="#down">Вниз</a> <a href="#down"><img src="img/down.png" width="20" alt="Вниз"></a>
+
+<a id="recipe"></a>
+<h1>Раздел 1. Приготовление раствора соли</h1>
+<ol>
+  <li> Соль NaCl, 9 г </li>
+  <li> Вода, H<sub>2</sub>O, <br> 991 мл </li>
+  <li> Мерный стакан, <s>100 мл</s> 1000 мл </li>
+  <li> <u>Хранить в тёмном месте</u> </li>
+</ol>
+<hr color="red">
+<p><i>Примечания</i><br>
+Соль нужно высушить <br>
+Воду добавлять порциями <br>
+Раствор не кипятить </p>
+<a href="#top">Перейти вверх</a> <a href="#top"><img src="img/up.png" width="20" alt="Вверх"></a>
+
+<a id="lists"></a>
+<h1>Раздел 2. Классы веществ</h1>
+<ul type="square">
+  <li> Неорганические
+    <ul>
+      <li> Оксиды </li>
+      <li> Кислоты </li>
+      <li> Соли </li>
+       <li> Основания </li>
+    </ul>
+  </li>
+  <li> Органические
+    <ul>
+      <li> Углеводороды </li>
+      <li> Спирты </li>
+      <li> Кетоны </li>
+      <li> Амины </li>
+       <li>Эфиры</li>
+    </ul>
+  </li>
+</ul>
+
+<a id="periods"></a>
+<h1>Раздел 3. Периоды</h1>
+<ol>
+  <li> Малые периоды
+    <ol>
+      <li> Первый: H, He </li>
+      <li> Второй: Li ... Ne </li>
+      <li> Третий: Na ... Ar </li>
+    </ol>
+  </li>
+  <li> Большие периоды
+    <ol start="4">
+      <li> Четвёртый: K ... Kr </li>
+      <li> Пятый: Rb ... Xe </li>
+    </ol>
+  </li>
+</ol>
+<a href="#top">Перейти вверх</a> <a href="#top"><img src="img/up.png" width="20" alt="Вверх"></a>
+
+<a id="down"></a>
+</body>
+</html>

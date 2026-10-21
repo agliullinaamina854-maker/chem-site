@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Решение алгоритмической задачи</title>
+<style>
+a:hover {
+  background-color: yellow;
+}
+a.active {
+  background-color: red;
+}
+</style>
+</head>
+<body>
+<a id="top"></a>
+<h1> Меню </h1>
+<ul>
+  <li> <a href="index.html"> Главная страница </a> </li>
+  <li> <a href="info.html"> Информационная страница с главами </a> </li>
+  <li> <a href="photos.html"> Фото </a> </li>
+  <li> <a href="table.html"> Таблица </a> </li>
+  <li> <a href="forms.html"> Форма </a> </li>
+  <li> <a href="passport.html"> Считывание из DOM </a> </li>
+  <li> <a href="passport_edit.html"> Кириллица на латиницу по клику </a> </li>
+  <li> <a href="algo.html" class="active"> Решение задачи </a> </li>
+  <li> <a href="info.html#lists"> Списки (закладка на информационной странице) </a> </li>
+  <li> <a href="https://www.hse.ru/" target="_blank"> Внешний сайт (ВШЭ) </a> </li>
+  <li> <a href="https://www.hse.ru/" target="_blank"> <img src="img/ext.png" width="20" alt="Внешний сайт"> </a> </li>
+  <li> <a href="index.html"> <img src="img/logo.png" width="20" alt="На главную"> </a> </li>
+</ul>
+
+
+<h1>Решение алгоритмической задачи</h1>
+<p><b>Задача 1002.</b> Дано вещественное число. Определить, какое это число:
+положительное, отрицательное, ноль.</p>
+<p> x: <input type="text" id="x" value="3.14"> <button id="solve"> Определить </button> </p>
+<p> Результат решения задачи: <span id="res">—</span> </p>
+<p> действие 1: <span id="act1">—</span> </p>
+<p> действие 2: <span id="act2">—</span> </p>
+
+<a id="down"></a>
+<script src="scripts/task.js"></script>
+</body>
+</html>

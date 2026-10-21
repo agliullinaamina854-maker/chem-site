@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>DOM_JS. Считываем информацию из DOM</title>
+<style>
+a:hover {
+  background-color: yellow;
+}
+a.active {
+  background-color: red;
+}
+.pass {
+  position: relative;              /* от этого блока считаются координаты */
+  box-sizing: border-box;
+  width: 445px;
+  height: 620px;
+  padding: 8px;
+  background-image: url(img/pasport_shablon.png);   /* шаблон паспорта */
+  background-repeat: no-repeat;
+}
+.fio { position: absolute; margin-left: 182px; padding-top: 330px }
+.name { position: absolute; margin-left: 172px; margin-top: 376px }
+.mid_name { position: absolute; margin-left: 180px; margin-top: 400px }
+.date_b { position: absolute; margin-left: 250px; margin-top: 422px }
+.date_issue { position: absolute; margin-left: 90px; margin-top: 125px }
+.place { position: absolute; margin-left: 180px; margin-top: 445px }
+.block1 { position: absolute; margin-left: 90px; margin-top: 61px }
+.block2 { position: absolute; padding-left: 240px; padding-top: 125px }
+.block3 { position: absolute; margin-left: 165px; margin-top: 423px }
+.block4 { position: absolute; margin-left: 30px; margin-top: 370px }
+.btn { position: absolute; margin-left: 10px; margin-top: 550px }
+</style>
+</head>
+<body>
+<a id="top"></a>
+<h1> Меню </h1>
+<ul>
+  <li> <a href="index.html"> Главная страница </a> </li>
+  <li> <a href="info.html"> Информационная страница с главами </a> </li>
+  <li> <a href="photos.html"> Фото </a> </li>
+  <li> <a href="table.html"> Таблица </a> </li>
+  <li> <a href="forms.html"> Форма </a> </li>
+  <li> <a href="passport.html" class="active"> Считывание из DOM </a> </li>
+  <li> <a href="passport_edit.html"> Кириллица на латиницу по клику </a> </li>
+  <li> <a href="algo.html"> Решение задачи </a> </li>
+  <li> <a href="info.html#lists"> Списки (закладка на информационной странице) </a> </li>
+  <li> <a href="https://www.hse.ru/" target="_blank"> Внешний сайт (ВШЭ) </a> </li>
+  <li> <a href="https://www.hse.ru/" target="_blank"> <img src="img/ext.png" width="20" alt="Внешний сайт"> </a> </li>
+  <li> <a href="index.html"> <img src="img/logo.png" width="20" alt="На главную"> </a> </li>
+</ul>
+
+
+<h1>DOM_JS. Считываем информацию из DOM</h1>
+<main class="pass">
+<div class="block1"> Выдан МВД по Республике Татарстан</div>
+<div class="block2"> 107-777</div>
+<div class="block3"> Жен </div>
+<div class="fio"> Аглиуллина</div>
+<div class="name"> Амина</div>
+<div class="date_b"> 17.10.2007</div>
+<div class="place"> Республика Татарстан</div>
+<div class="mid_name"> Фанилевна</div>
+<div class="date_issue"> 11.10.2021</div>
+<div class="block4"> <img src="img/wom.jpg" height="125" width="100"> </div>
+</main>
+
+<h2>Данные, полученные из DOM</h2>
+<pre>document.getElementsByTagName('div')[3].innerText   // фамилия
+document.getElementsByTagName('div')[4].innerText   // имя
+document.getElementsByTagName('div')[5].innerText   // дата рождения (год — последние 4 цифры)</pre>
+<p>Скриншот экрана:</p>
+<img src="img/screenshot.png" width="800" alt="Скриншот DevTools">
+
+<a id="down"></a>
+</body>
+</html>
